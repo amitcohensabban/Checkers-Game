@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CheckersProject</title>
+    <link rel="stylesheet" href="/board.css" />
+  </head>
+  <body>
+    <div class="playerTurn-grid">
+      <div id="turn">TURN COLOR</div>
+    </div>
+    <div class="board" id="board"></div>
+
+    <button type="button" id="resign-btn" class="button-modal">RESIGN</button>
+    <button type="button" id="draw-btn" class="button-modal">DRAW</button>
+
+    <div id="end-modal" class="none">
+      <div id="modalBox" class="modal-box">
+        <p id="txt-end-modal"></p>
+        <button id="ok-btn" class="button-modal">OK</button>
+      </div>
+    </div>
+    <div id="draw-modal" class="none">
+      <div id="modalBox" class="modal-box">
+        <p id="txt-draw-modal">DO YOU WANT TO END THE GAME IN A DRAW?</p>
+        <div class="btn-grid">
+          <button id="no-btn" class="button-modal">NO</button>
+          <button id="yes-btn" class="button-modal">YES</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/baord.js"></script>
+  </body>
+</html>
