@@ -359,13 +359,13 @@ function addEventListenersClicks() {
     }
     resetClicks();
     console.log(whiteCheckerCounter, blackCheckerCounter);
-    checkForWin();
     if (isStalment()) {
       endModal.className = "modal";
       txtEndModal.innerHTML = isWhiteTurn
-        ? "GAME ENDED IN STALMENT, BLACK WINS!"
-        : "GAME ENDED IN STALMENT, WHITE WINS!";
+      ? "GAME ENDED IN STALMENT, BLACK WINS!"
+      : "GAME ENDED IN STALMENT, WHITE WINS!";
     }
+    checkForWin();
   });
 }
 function addEventListenerButtons() {
